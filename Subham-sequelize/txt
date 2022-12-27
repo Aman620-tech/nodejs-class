@@ -1,0 +1,21 @@
+1- User table
+
+
+
+npx sequelize init
+
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string,password:string
+
+npx sequelize-cli db:migrate
+
+npx sequelize-cli model:generate --name role --attributes role:String,user_id:string       (referencing is done from table)                  
+
+npx sequelize-cli db:migrate
+
+
+<!-- Changes  Table undo  -->
+npx sequelize-cli db:migrate:undo
+
+============================================
+
+1- Database import

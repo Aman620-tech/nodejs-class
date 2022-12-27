@@ -1,0 +1,10 @@
+.home {
+  display: flex;
+}
+
+.home_menu {
+  padding: 11px 25px 47px 21px;
+}
+.Button {
+  background-color: "none";
+}
